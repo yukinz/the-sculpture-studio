@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="functions.js"></script>	
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<article>
+				<header>
+                    <img id="logo" src="Images/TheThinker.png" width="100px" height="93px">
+					<OBJECT id="title" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"
+                         WIDTH="550" HEIGHT="99">
+                        <PARAM NAME=movie VALUE="Animations/Title.swf">
+                        <PARAM NAME=quality VALUE=high>
+						<PARAM NAME="wmode" VALUE="transparent">
+                        <EMBED src="Title.swf" quality=high wmode="transparent" WIDTH="550" HEIGHT="99"
+                         NAME="MyMovieName" ALIGN="" TYPE="application/x-shockwave-flash"
+                         PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+                        </EMBED>
+					</OBJECT>
+				</header>
+            
+                <nav>
+                    <table width="100%" style="float:left">
+                        <tr>
+							<td align="center" width="25%"><a href="home.html"><div class="link" id="home"></div></a></td>
+                            <td id="currentPage" align="center" width="25%"><a href="makeArt.html"><div class="link" id="makeArt"></div></a></td>
+                            <td align="center" width="25%"><a href="viewArt.html"><div class="link" id="viewArt"></div></a></td>
+                            <td align="center" width="25%"><a href="contact.html"><div class="link" id="contact"></div></a></td>
+                        </tr>
+                    </table>
+                </nav>
+				<div id="quiz">
+				<form name="calculateCourse" method="post" onsubmit="return Results();">
+					<table width="100%" border="0px">
+						<tr>
+							<td>
+								<p>Please select any courses that you have completed:</p>
+								<p><input type="checkbox" name="Q1" value="">Beginner Sculpting</p>
+								<p><input type="checkbox" name="Q1" value="">Intermediate Sculpting</p>
+								<p><input type="checkbox" name="Q1" value="">Advanced Sculpting</p>
+							</td>
+							
+							<td>
+								<p>How much experience do you have with sculpting:</p>
+								<p><input type="radio" name="Q2" value="">None</p>
+								<p><input type="radio" name="Q2" value="">Some</p>
+								<p><input type="radio" name="Q2" value="">Lots</p>
+							</td>
+							
+							<td>
+								<p>Why do you want to take a sculpting course:</p>
+								<p><input type="radio" name="Q3" value="">Because it looks interesting / fun</p>
+								<p><input type="radio" name="Q3" value="">So I can create sculptures for a hobby</p>
+								<p><input type="radio" name="Q3" value="">So I can create sculptures for a job</p>
+							</td>
+							
+							<td>
+								<p>How much practise time do you have:</p> 
+								<p><input type="radio" name="Q4" value="">Only able to practise during the course</p>
+								<p><input type="radio" name="Q4" value="">Able to practise a few hours ouside the course</p>
+								<p><input type="radio" name="Q4" value="">Able to practise as much as necessary</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="3"></td>
+							<td align="center"><input type="submit" value="Show Best Suited Courses"></td>
+						</tr>
+					</table>
+				</form>
+				</div>
+			</article>
+            
+			<div id="lowerHalf">
+                <section>
+					<h2>Courses</h2>
+					<p>Here at the sculpture studio we offer a variety of courses so that you can find the one that suits you the best. The difficulty of the courses starts at beginner and continue all the way to advanced. The courses are also offered as group courses that would be run one night per week for three weeks or if you prefer you can have one on one tuition. If you are unsure about which course would be best for you then please fill out the questionnaire above and see what it recommends. If you are interested in taking a couse then please go to our contact page and let us know.</p>
+                </section>
+                
+                <aside>
+					<h2>Recommended Courses</h2>
+					<p>Based on your above answers we recommend you take:
+                    <p id="results"></p>
+                </aside>
+            
+            	<footer>
+					<div id="socialMedia">
+						<a href="https://twitter.com/">
+						<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/twitter.png" width="35" height="35" />
+						</a>
+						
+						<a href="https://www.facebook.com/">
+						<img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/facebook.png" width="35" height="35" />
+						</a>
+						<a href="mailto:liamtubs@yahoo.co.nz">
+						<img title="Email" alt="Email" src="https://socialmediawidgets.files.wordpress.com/2014/03/email.png" width="35" height="35" />
+						</a>
+					</div>
+				</footer>
+			</div>
+			
+		</div>	
+	</body>	
+</html>
